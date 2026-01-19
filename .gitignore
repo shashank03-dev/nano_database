@@ -1,0 +1,5 @@
+nanodb
+nanodb_server
+*.exe
+*.db
+*.o
