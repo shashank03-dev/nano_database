@@ -55,5 +55,5 @@ See stats: STATS -> returns Total Keys: 1
 ## working demo 
 
 <p align="center">
-  <img src="demo.gif" width="700px" alt="NanoDB Demo">
+  <img src="/nanodb/demo.gif" width="700px" alt="NanoDB Demo">
 </p>
