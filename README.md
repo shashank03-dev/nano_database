@@ -51,10 +51,8 @@ Check existence: EXISTS user:1 -> returns :1
 
 See stats: STATS -> returns Total Keys: 1
 
-
-## working demo  
-
+## 📺 Working Demo
 
 <p align="center">
-  <img src="demo.gif" width="700" alt="NanoDB Demo">
+<img src="demo.gif" width="700" alt="NanoDB Demo">
 </p>
