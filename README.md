@@ -36,9 +36,10 @@ Run this in your first terminal window:
 gcc server.c storage.c -o nanodb_server
 ./nanodb_server
 
+
 ### 2. nc localhost 8888
  make an another terminal and run this comannd
-
+```
 
 ### 3.
 Try these commands:
