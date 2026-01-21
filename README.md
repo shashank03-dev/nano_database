@@ -31,10 +31,10 @@ NanoDB operates as a server using **TCP Sockets**.
 Want to see it in action? Follow these steps to get the server running and talk to it from your terminal.
 
 ### 1. Build and Run the Server
+Run this in your first terminal window:
 ```bash
 gcc server.c storage.c -o nanodb_server
-./nanodb_server   
-do this in one terminal
+./nanodb_server
 
 ### 2. nc localhost 8888
  make an another terminal and run this comannd
@@ -52,8 +52,9 @@ Check existence: EXISTS user:1 -> returns :1
 See stats: STATS -> returns Total Keys: 1
 
 
-## working demo 
+## working demo  
+
 
 <p align="center">
-  <img src="/nanodb/demo.gif" width="700px" alt="NanoDB Demo">
+  <img src="demo.gif" width="700" alt="NanoDB Demo">
 </p>
