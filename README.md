@@ -50,3 +50,11 @@ Retrieve data: GET user:1 -> returns shashank
 Check existence: EXISTS user:1 -> returns :1
 
 See stats: STATS -> returns Total Keys: 1
+
+
+## working demo 
+
+# NanoDB
+A persistent Key-Value store built in C.
+
+![NanoDB Demo](demo.gif)
