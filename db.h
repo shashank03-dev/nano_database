@@ -1,28 +1,26 @@
 #ifndef DB_H
 #define DB_H
 
-#include <stdio.h>
 #include <stdint.h>
+#include <stdio.h>
 
-// This is the structure for each entry in our datbase 
+// In-memory index entry mapping key -> file offset
 typedef struct {
-    char key[256];      // The key (max 255 chars + null)
-    long file_offset;   // Where the value is in the Diary
-    uint32_t val_size;  // size of the value
+  char key[256];
+  long file_offset;
+  uint32_t val_size;
 } IndexEntry;
 
-// The Database state
+// Main database context
 typedef struct {
-    FILE *fp;           // The file pointer
-    IndexEntry *index;  // Our "Magic List" array
-    int count;          // How many items we have
+  FILE *fp;
+  IndexEntry *index;
+  int count;
 } NanoDB;
 
-// Functions
-NanoDB* db_open(const char *filename);
+NanoDB *db_open(const char *filename);
 void db_set(NanoDB *db, const char *key, const char *value);
-char* db_get(NanoDB *db, const char *key);
+char *db_get(NanoDB *db, const char *key);
 void db_close(NanoDB *db);
-
 void db_bootstrap(NanoDB *db);
 #endif
